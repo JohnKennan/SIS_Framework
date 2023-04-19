@@ -18,7 +18,7 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun = false,
 
 		// tags can do the same thing groups on TestNG do
-		tags = "@sprint10",
+		tags = "@login",
 
 		//it shows the console format more clear by removing weird chars
 		monochrome = false,
