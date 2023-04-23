@@ -15,8 +15,9 @@ public class Hooks {
 	}
 	
 	@After
-	public void end(Scenario scenario) {
+	public void end(Scenario scenario) throws InterruptedException {
 		
+		Thread.sleep(2000);
 		
 		byte[] picture;
 		
@@ -34,7 +35,7 @@ public class Hooks {
 		}
 		
 		scenario.attach(picture, "image/png", scenario.getName());
-		
+		Thread.sleep(2000);
 		BaseClass.tearDown();
 	}
 

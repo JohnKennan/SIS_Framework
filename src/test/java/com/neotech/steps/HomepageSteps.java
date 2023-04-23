@@ -1,7 +1,5 @@
 package com.neotech.steps;
 
-import org.junit.Assert;
-
 import com.neotech.utils.CommonMethods;
 
 import io.cucumber.java.en.Then;
@@ -53,4 +51,15 @@ public class HomepageSteps extends CommonMethods{
 //		Assert.assertEquals(expected, actual);
 		System.out.println("Validated url contains");
 	}
+	
+	@When("Proceed to Parental tab")
+	public void proceed_to_parental_tab() {
+		click(homepage.parentalTab);
+		wait(2);
+		System.out.println("Clicked on parental!");
+	}
+	
+
+	
+	
 }

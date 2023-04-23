@@ -34,6 +34,18 @@ public class LoginPageElements extends CommonMethods {
 		Select sel = new Select(academicYear);
 		sel.selectByVisibleText(ConfigsReader.getProperty("academicYear"));
 		click(logInButton);
+		System.out.println("Admin Logged in");
+		wait(1);
+	}
+	
+	public void userLogin() {
+		sendText(username, ConfigsReader.getProperty("newStudentLastName"));
+		sendText(password, ConfigsReader.getProperty("newStudentPassword"));
+		Select sel = new Select(academicYear);
+		sel.selectByVisibleText(ConfigsReader.getProperty("academicYear"));
+		click(logInButton);
+		System.out.println("User Logged in");
+		wait(1);
 	}
 
 }

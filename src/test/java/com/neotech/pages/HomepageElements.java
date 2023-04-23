@@ -17,8 +17,10 @@ public class HomepageElements extends CommonMethods {
 	@FindBy(xpath = "//form[@id='form1']//td[2]//tbody//span")
 	public WebElement logo;
 	
+	@FindBy(xpath = "//form[@id='form1']//td[6]/a")
+	public WebElement parentalTab;
 	
-
+	
 	public HomepageElements() {
 		PageFactory.initElements(driver, this);
 	}
